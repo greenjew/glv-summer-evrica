@@ -28,7 +28,6 @@ body {
     min-width: 320px;
     height: 100%;
     font-family: 'Roboto slab', sans-serif;
-    color: #888888;
 }
 
 img {
@@ -55,13 +54,6 @@ img {
     font-size: 50px;
 }
 
-#nav_bar {
-    background: #cea172;
-    font-family: B52;
-    color: black;
-    border-color: peru;
-}
-
 .w_pic {
     background-attachment: fixed;
     background-position: center;
@@ -70,53 +62,52 @@ img {
 }
 
 #top {
-    margin-top: -22px;
-    min-height: 933px;
-    background-image: url("../img/header.jpg");
+    min-height: 300px;
+    background: #00a9ec;
     background-size: 100%
 }
 
+.logo {
+    max-height: 250px;
+}
+
 .desc {
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
     position: relative;
-    background: lightslategrey;
-    height: 200px;
+    background: white;
+    min-height: 150px;
 }
 
-#styles {
-    position: relative;
-    min-height: 578px;
-    background-image: url("../img/moodboard.jpg");
-    background-size: 70%;
-    padding: 10px 10%;
+.excursion{
+background: gold;
 }
 
-.style {
-    position: relative;
-    display: inline-block;
-    width: 300px;
-    height: 280px;
-    border: black solid 2px;
-    border-radius: 5px;
-    margin: 10px 20px;
-    background: rgba(255, 255, 255, 0.7);
+#camp {
+    background: #ffcf25;
 }
 
-.thumb {
-    position: absolute;
-    left: 50px;
-    margin: 10px 0;
-    height: 200px;
-    width: 200px;
+.foto {
+    margin: 10px;
+    border: 2px outset;
+    padding: 0 !important;
 }
 
-#shops {
-    position: relative;
-    background-image: url("../img/shop.png");
-    background-size: 80%;
-    min-height: 400px;
+#about{
+    text-align: center;
+    background-image: url("../img/kids.jpg");
+    font-size: 20px;
+    min-height: 500px;
 }
 
-#authors{
+.text{
+    color: blue;
+    background: rgba(255,255,255,0.7);
+    margin-bottom: 10px;
+}
+
+#authors {
     position: relative;
     background: lightslategrey;
     height: 100px;
@@ -124,7 +115,7 @@ img {
     display: grid;
 }
 
-.author{
+.author {
     position: relative;
     display: inline-block;
     border-radius: 5px;
@@ -132,5 +123,12 @@ img {
     margin: 10px 10px 0 10px;
     width: max-content;
     color: goldenrod;
-    background: cornsilk ;
+    background: cornsilk;
+}
+
+@media screen and (max-width: 500px) {
+    .foto {
+        margin: 0 100px ;
+        border: 2px outset;
+    }
 }
